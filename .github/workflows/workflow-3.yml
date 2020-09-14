@@ -1,0 +1,11 @@
+name: workflow-3
+on:
+  pull_request:
+    paths-ignore:
+    - '**.js'
+
+jobs:
+  sample-job:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "Hello."
