@@ -1,0 +1,11 @@
+name: paths-1
+on:
+  pull_request:
+    paths:
+    - '**.js'
+
+jobs:
+  sample-job:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "Hello."

@@ -1,0 +1,13 @@
+name: paths-5
+on:
+  pull_request:
+    paths:
+    - 'module-a/**'
+    - '!**.md'
+    - 'module-a/**/important-document.md'
+
+jobs:
+  sample-job:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "Hello."

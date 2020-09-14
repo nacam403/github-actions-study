@@ -1,0 +1,12 @@
+name: paths-4
+on:
+  pull_request:
+    paths:
+    - 'module-a/**'
+    - '!**.md'
+
+jobs:
+  sample-job:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "Hello."

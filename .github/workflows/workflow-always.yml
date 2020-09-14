@@ -1,8 +1,5 @@
-name: workflow-2
-on:
-  pull_request:
-    paths:
-    - '**.js'
+name: always
+on: pull_request
 
 jobs:
   sample-job:

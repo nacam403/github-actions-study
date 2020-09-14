@@ -1,8 +1,9 @@
-name: workflow-3
+name: paths-2
 on:
   pull_request:
-    paths-ignore:
+    paths:
     - '**.js'
+    - '**.md'
 
 jobs:
   sample-job:
